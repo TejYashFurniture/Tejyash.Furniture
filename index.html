@@ -5,28 +5,180 @@
   <title>TejYash Furniture | Lonavala</title>
   <meta name="description" content="TejYash Furniture offers affordable furniture repair and new furniture services in Lonavala, Maharashtra.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* Page background */
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #ffffff;
+      background: linear-gradient(135deg, #0f172a, #1d4ed8, #22c55e);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Card */
+    .card {
+      background: rgba(15, 23, 42, 0.9);
+      border-radius: 18px;
+      padding: 28px 24px 30px;
+      max-width: 420px;
+      width: 90%;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      animation: fadeInUp 0.8s ease-out;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.9);
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 1.8rem;
+      letter-spacing: 0.04em;
+    }
+
+    .tagline {
+      margin: 0 0 18px;
+      font-size: 0.95rem;
+      color: #a5b4fc;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 0.98rem;
+      color: #e5e7eb;
+    }
+
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 6px;
+      font-size: 1.1rem;
+      color: #bfdbfe;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin: 6px 0 0;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+      margin-bottom: 4px;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .pill {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(59, 130, 246, 0.16);
+      border: 1px solid rgba(96, 165, 250, 0.6);
+      font-size: 0.8rem;
+    }
+
+    .contact-line {
+      margin: 2px 0;
+      font-size: 0.95rem;
+    }
+
+    .highlight {
+      color: #fbbf24;
+      font-weight: 600;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: none;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      color: #022c22;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(22, 163, 74, 0.5);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 14px 35px rgba(22, 163, 74, 0.7);
+      filter: brightness(1.05);
+    }
+
+    .cta-btn:active {
+      transform: translateY(0) scale(0.99);
+      box-shadow: 0 8px 18px rgba(22, 163, 74, 0.5);
+    }
+
+    .badge {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(59, 130, 246, 0.18);
+      border: 1px solid rgba(96, 165, 250, 0.6);
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #bfdbfe;
+    }
+
+    /* Simple entrance animation */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="card">
+    <div class="badge">Lonavala • Since 20XX</div>
+    <h1>TejYash Furniture</h1>
+    <p class="tagline">Repair • New Work • Custom Designs</p>
 
-  <h1>TejYash Furniture</h1>
+    <p>
+      TejYash Furniture is a professional service provider based in
+      <span class="highlight">Lonavala, Maharashtra</span>, offering
+      high-quality and affordable furniture repairing and new furniture
+      work with complete customer satisfaction.
+    </p>
 
-  <p>
-    TejYash Furniture is a professional service provider based in Lonavala,
-    Maharashtra, offering high-quality and affordable repairing and new
-    furniture services. We focus on best work at low prices and complete
-    customer satisfaction.
-  </p>
+    <h2>Our Services</h2>
+    <ul class="pill-list">
+      <li class="pill">Furniture Repairing</li>
+      <li class="pill">New Furniture Work</li>
+      <li class="pill">Custom Furniture</li>
+    </ul>
 
-  <h2>Our Services</h2>
-  <ul>
-    <li>Furniture Repairing</li>
-    <li>New Furniture Work</li>
-    <li>Custom Furniture</li>
-  </ul>
+    <h2>Contact Us</h2>
+    <p class="contact-line">📍 XXXXXXXXXXXXXXXX</p>
+    <p class="contact-line">📞 Phone: +91xxxxxxxxxx</p>
 
-  <h2>Contact Us</h2>
-  <p>📍 Lonavala, Maharashtra</p>
-  <p>📞 Phone: +919673880417</p>
-
+    <button class="cta-btn">Call now &gt;</button>
+  </div>
 </body>
 </html>
