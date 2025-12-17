@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TejYash Furniture | Lonavala</title>
-  <meta name="description" content="TejYash Furniture offers affordable furniture repair and new furniture services in Lonavala, Maharashtra.">
+  <title>TejYash Enterprises | Lonavala</title>
+  <meta name="description" content="TejYash Enterprises offers affordable furniture repair and new furniture services in Lonavala, Maharashtra.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -115,6 +115,7 @@
       cursor: pointer;
       box-shadow: 0 10px 25px rgba(22, 163, 74, 0.5);
       transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+      text-decoration: none; /* so the <a> looks like a button */
     }
 
     .cta-btn:hover {
@@ -139,6 +140,16 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: #bfdbfe;
+    }
+
+    .small-call {
+      font-size: 0.85rem;
+      margin-top: 4px;
+    }
+
+    .small-call a {
+      color: #bbf7d0;
+      text-decoration: underline;
     }
 
     /* Simple entrance animation */
@@ -176,15 +187,22 @@
       <li class="pill">Sound Box</li>
       <li class="pill">Plant Stand</li>
       <li class="pill">Bird Nest</li>
-      <li class="pill">AnD Many More</li>
+      <li class="pill">And Many More</li>
     </ul>
 
     <h2>Contact Us</h2>
-    <p class="contact-line">📍 Lonavla,Maharashtra</p>
-    <p class="contact-line">📞 Phone: +919673880417</p>
-    <p class="contact-line">📞 Phone: +9185519945245</p>
+    <p class="contact-line">📍 Lonavla, Maharashtra</p>
+    <p class="contact-line">📞 Phone: +91 9673880417</p>
+    <p class="contact-line">📞 Phone: +91 8551994245</p>
 
-    <button class="cta-btn">Call now &gt;</button>
+    <!-- Main big call button (first number) -->
+    <a href="tel:+911111111111" class="cta-btn">Call now &gt;</a>
+
+    <!-- Optional small link for second number -->
+    <p class="small-call">
+      Prefer second number?
+      <a href="tel:+912222222222">Tap to call +91 2222222222</a>
+    </p>
   </div>
 </body>
 </html>
